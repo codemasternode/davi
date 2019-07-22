@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #261C14;
+}
+
+main {
+    background-color: rgb(213, 195, 165);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    padding: 2rem;
+    opacity: 1;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+}
+
+section.frame {
+    background: #D1C3A4;
+}
+
+section.frame div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid white;
+    height: 100%;
+}
+
+.cover {
+    background-image: url(./img/image_darker.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-shadow: 2px 0px 2px rgba(38,28,20,0.5);
+    /* visibility: hidden; */
+}
+
+.cover div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border: 3px solid white;
+}
+
+h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 3rem;
+}
+
+h2 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 5rem;
+}
+
+.and {
+    font-size: 3rem;
+}
+
+p {
+    text-align: justify;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.frame img {
+    width: 90%;
+    height: auto;
+}
+
+.arrow {
+    position: fixed;
+    fill: #D1C3A4;
+    top: 45%;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+.arrow:hover {
+    fill: white;
+}
